@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<config>
+    <company_adminboilerplate>
+        <csv_fields>
+
+            <!--
+            <example> # The unique key of the field
+                <label>Example</label>
+                <input>text|textarea|select|multiselect|file|...</input>
+                <values>getCategories</values> # Optional values method name - defined in the helper file.
+                <notes>This is an example field</notes> # Appears beneath the field on the form
+                <grid>true</grid> # Should the value appear on the grid
+                <filterable>true</fiterable> # Will this field be filterable? If true, it cannot be removed after installation.
+                <type>text</type> # Database column type - only applicable if filterable is true
+            </example>
+            -->
+
+            <name>
+                <label>Name</label>
+                <input>text</input>
+                <notes>This is the name field</notes>
+                <grid>true</grid>
+                <filterable>true</filterable>
+            </name>
+
+            <desc>
+                <label>Description</label>
+                <input>textarea</input>
+                <grid>true</grid>
+            </desc>
+
+            <image>
+                <label>Image</label>
+                <input>file</input>
+            </image>
+
+        </csv_fields>
+    </company_adminboilerplate>
+</config>

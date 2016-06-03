@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Company_AdminBoilerplate>
+            <version>1.0.0</version>
+        </Company_AdminBoilerplate>
+    </modules>
+
+    <default>
+        <company_adminboilerplate>
+            <media_path>items</media_path>
+        </company_adminboilerplate>
+    </default>
+
+    <global>
+        <blocks>
+			<company_adminboilerplate_adminhtml>
+               <class>Company_AdminBoilerplate_Block_Adminhtml</class>
+            </company_adminboilerplate_adminhtml>
+		</blocks>
+
+		<helpers>
+            <company_adminboilerplate>
+                <class>Company_AdminBoilerplate_Helper</class>
+            </company_adminboilerplate>
+        </helpers>
+
+		<models>
+			<company_adminboilerplate>
+                <class>Company_AdminBoilerplate_Model</class>
+                <resourceModel>company_adminboilerplate_resource</resourceModel>
+            </company_adminboilerplate>
+
+			<company_adminboilerplate_resource>
+                <class>Company_AdminBoilerplate_Model_Resource</class>
+
+                <entities>
+                    <data>
+                        <table>company_adminboilerplate</table>
+                    </data>
+                </entities>
+            </company_adminboilerplate_resource>
+		</models>
+
+		<resources>
+            <company_adminboilerplate_setup>
+                <setup>
+                    <module>Company_AdminBoilerplate</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </company_adminboilerplate_setup>
+        </resources>
+	</global>
+
+	<admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <company_adminboilerplate before="Mage_Adminhtml">Company_AdminBoilerplate_Adminhtml</company_adminboilerplate>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

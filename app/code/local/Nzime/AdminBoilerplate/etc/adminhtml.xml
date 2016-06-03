@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <cms>
+            <children>
+                <company_adminboilerplate translate="title" module="company_adminboilerplate">
+                    <title>My Data</title>
+                    <sort_order>920</sort_order>
+                    <action>adminhtml/company_adminboilerplate</action>
+                </company_adminboilerplate>
+            </children>
+        </cms>
+    </menu>
+    
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <cms>
+                        <children>
+                            <company_adminboilerplate translate="title" module="company_adminboilerplate">
+                                <title>My Data</title>
+                            </company_adminboilerplate>
+                        </children>
+                    </cms>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
