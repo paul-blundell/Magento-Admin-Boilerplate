@@ -1,4 +1,4 @@
-# Company AdminBoilerplate
+# Magento Admin Boilerplate
 Provides a starting admin interface with Import/Export.
 
 ## Facts
