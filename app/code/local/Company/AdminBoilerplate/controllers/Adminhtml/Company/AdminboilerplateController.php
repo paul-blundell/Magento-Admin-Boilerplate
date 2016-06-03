@@ -11,6 +11,7 @@ class Company_AdminBoilerplate_Adminhtml_Company_AdminboilerplateController exte
         $contentBlock = $this->getLayout()->createBlock('company_adminboilerplate_adminhtml/item');
 
         // add the grid container as the only item on this page
+        $this->loadLayout();
         $this->getLayout()->getBlock('head')->setTitle($this->__('Admin Boilerplate'));
         $this->_addContent($contentBlock);
         $this->renderLayout();
@@ -71,7 +72,7 @@ class Company_AdminBoilerplate_Adminhtml_Company_AdminboilerplateController exte
 
         // instantiate the form container
         $contentEditBlock = $this->getLayout()->createBlock(
-            '*/*/item_edit'
+            'company_adminboilerplate_adminhtml/item_edit'
         );
 
         // add the form container as the only item on this page
