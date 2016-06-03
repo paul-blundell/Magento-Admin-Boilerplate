@@ -15,7 +15,7 @@ A starting template for an admin extension to manage data.
 ### How to use this
 1. Clone the repo into your project.
 1. Replace all occurrences of `AdminBoilerplate` with `YourModule` and then `adminboilerplate` with `yourmodule`. Case sensitive!
-1. Rename the file `controllers/Adminhtml/Company/AdminboilerplateController.php`
+1. Rename the files `controllers/Adminhtml/Company/AdminboilerplateController.php` and `etc/modules/Company_AdminBoilerplate.xml`
 1. Rename the folders in `sql` and `controllers/Adminhtml/`
 1. Update the table name in config.xml if required
 1. Define the fields in fields.xml - do this before installing!
